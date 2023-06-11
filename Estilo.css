@@ -1,0 +1,159 @@
+/*Fuentes*//*Metí un buen y nada funciona pipipi, pero q se vea q si le se a ponerlas*/
+@font-face{
+  font-family: Sirukota;
+  src:url(Sirukota.ttf)
+}
+@font-face{
+  font-family:"b" ;
+  src: url('04B_30__.TTF');
+}
+@font-face {
+    font-family: "chu";
+    src: url('Chubby\ Relief.ttf');
+}
+@font-face {
+    font-family: "sunny";
+    src: url('Sunny\ Sunday.ttf');
+}
+/****************************/
+
+h1{
+    font-family: Milky;
+    color:rgb(7, 0, 17)
+}
+.texto{
+    font-family: Milky;
+    color:rgb(7, 0, 17)
+}
+.subtitulo{
+    font-family:Sirukota ;
+    font-size: xx-large;
+    background-image:url('flores.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: sticky;
+    top: 0;
+}
+::-webkit-scrollbar {
+    width: 15px;
+  }
+::-webkit-scrollbar-thumb {
+    background-color: #ff5fb7;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #da91e0;
+  }
+.nombre{
+    font-family:sunny;
+    font-size: xx-large;
+    color:rgb(0, 0, 0);
+}
+/*colores en la tabla*/
+#thead{
+  background-color: #ff5fb7;
+}
+.nombrepersonaje{
+  background-color: rgb(255, 186, 234);
+}
+.descripcion{
+  background-color: rgb(255, 206, 183);
+}
+/* cuadros de la info*/
+#plantas{
+  width: 90%;
+  background-color: rgb(120, 221, 120);
+  border-radius: 15px;
+}
+#peliculas{
+  width: 15%;
+  background-color: rgb(253, 255, 159);
+  border-radius: 15px;
+}
+#comidas{
+  width: 40%;
+  background-color: rgb(255, 210, 159);
+  border-radius: 15px;
+}
+#canciones{
+  width: 96%;
+  background-color: rgb(120, 164, 221);
+  border-radius: 15px;
+}
+/*temas preferidos*/
+#temascw{
+  font-size:xx-large;
+  width: 30%;
+  height: 30%;
+  border: 2px solid #000;
+  background-color: rgb(192, 255, 255);
+  border-radius: 10px;
+  overflow: auto;
+  padding: 50px;
+}
+#lista{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  margin-bottom: 10px;
+}
+/*DIBUJO TILÍN*/
+/* La figura de infinito  para el moño la saque de https://minitutoriales.blogspot.com*/
+#contenedorhuevo {
+  position: relative;
+  width: 200px;
+  height: 220px;
+}
+.pierna1 {
+  position: absolute;
+  bottom: 10px;
+  width: 20px;
+  height: 60px;
+  left:110px;
+  background-color: rgb(0, 0, 0);
+  z-index: -1;
+}
+.pierna2 {
+  position: absolute;
+  bottom: 10px;
+  width: 20px;
+  height: 60px;
+  left:60px;
+  background-color: rgb(0, 0, 0);
+  z-index: -1;
+}
+#tilin {
+  display:block; 
+  width:126px; height:180px; 
+  background-color:rgb(255, 255, 255); 
+  -webkit-border-radius:63px 63px 63px 63px / 108px 108px 72px 72px; 
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+#moño {
+  position: absolute;
+  top: -30px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 212px;
+  height: 100px;
+}
+#moño:before,
+#moño:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  border: 20px solid red;
+  border-radius: 50px 50px 0 50px;
+  transform: rotate(-45deg);
+}
+#moño:after {
+  left: auto;
+  right: 0;
+  border-radius: 50px 50px 50px 0;
+  transform: rotate(45deg);
+}
